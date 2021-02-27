@@ -278,7 +278,7 @@
       ]
     },
     {
-      "name": "dead",
+      "name": "explode",
       "repeat": true,
       "frames": [
         {
