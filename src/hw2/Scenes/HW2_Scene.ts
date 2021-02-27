@@ -523,6 +523,31 @@ export default class Homework1_Scene extends Scene {
 			asteroid.setAIActive(true, {direction: dir});
 			AsteroidAI.SPEED += this.ASTEROID_SPEED_INC;
 
+			/* MY CODE */
+			// Assign a random color
+			switch(Math.floor(Math.random() * 6) + 1) {
+				case 1:
+					asteroid.color = Color.RED
+					break;
+				case 2:
+					asteroid.color = Color.CYAN
+					break;
+				case 3:
+					asteroid.color = Color.MAGENTA
+					break;
+				case 4:
+					asteroid.color = Color.GREEN
+					break;
+				case 5:
+					asteroid.color = Color.BLUE
+					break;
+				case 6:
+					asteroid.color = Color.ORANGE
+					break;
+				default:
+					asteroid.color = Color.RED
+			}
+
 			// Update the UI
 			this.numAsteroids += 1;
 			this.asteroidsLabel.text = `Asteroids: ${this.numAsteroids}`;

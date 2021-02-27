@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c9dcbcd-a9c6-4ccb-bf94-3575e017bcb3" name="Default Changelist" comment="changed fleet ship sprite to original spaceship sprite" />
+    <list default="true" id="4c9dcbcd-a9c6-4ccb-bf94-3575e017bcb3" name="Default Changelist" comment="untracked files preventing merge">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/hw2_assets/shaders/gradient_circle.fshader" beforeDir="false" afterPath="$PROJECT_DIR$/dist/hw2_assets/shaders/gradient_circle.fshader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw2/GradientCircleShaderType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/GradientCircleShaderType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw2/Scenes/HW2_Scene.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/Scenes/HW2_Scene.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="hw2_s21" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -35,12 +46,26 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/hw2_assets/spritesheets" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\Matthew\IdeaProjects\CSE380\CSE380hw2\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Matthew\IdeaProjects\CSE380\CSE380hw2\dist\hw2_assets\spritesheets" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -53,6 +78,8 @@
       <workItem from="1614317632018" duration="1451000" />
       <workItem from="1614321703418" duration="1080000" />
       <workItem from="1614366004970" duration="5261000" />
+      <workItem from="1614382805462" duration="177000" />
+      <workItem from="1614382990936" duration="7761000" />
     </task>
     <task id="LOCAL-00001" summary="changed fleet ship sprite to original spaceship sprite">
       <created>1614382596086</created>
@@ -61,7 +88,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614382596086</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="untracked files preventing merge">
+      <created>1614382865089</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614382865089</updated>
+    </task>
+    <task id="LOCAL-00003" summary="untracked files preventing merge">
+      <created>1614382884680</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614382884680</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +122,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed fleet ship sprite to original spaceship sprite" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed fleet ship sprite to original spaceship sprite" />
+    <MESSAGE value="untracked files preventing merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="untracked files preventing merge" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
