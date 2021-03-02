@@ -477,7 +477,6 @@ export default class Homework1_Scene extends Scene {
 				// If the asteroid is spawned in and it overlaps the player
 				if(asteroid.visible && Homework1_Scene.checkAABBtoCircleCollision(<AABB>this.player.collisionShape, <Circle>asteroid.collisionShape)){
 					// Put your code here:
-
 				}
 			}
 		}
@@ -597,11 +596,11 @@ export default class Homework1_Scene extends Scene {
 	 */
 	handleScreenWrap(node: GameNode, viewportCenter: Vec2, paddedViewportSize: Vec2): void {
 		// Your code goes here:
-		if ( ( node.position.x >= (paddedViewportSize.x) - 1 ) || ( node.position.x <= (-1 * paddedViewportSize.x) + 1) )
+		if ( ( node.position.x >= (paddedViewportSize.x)) || ( node.position.x <= (-1 * paddedViewportSize.x)) )
 		{
 			node.position = new Vec2((node.position.x * -1), node.position.y);
 		}
-		else if ( ( node.position.y >= (paddedViewportSize.y) - 1 ) || ( node.position.y <= (-1 * paddedViewportSize.y) + 1) )
+		else if ( ( node.position.y >= (paddedViewportSize.y)) || ( node.position.y <= (-1 * paddedViewportSize.y)) )
 		{
 			node.position = new Vec2(node.position.x, (node.position.y * -1));
 		}
@@ -634,7 +633,39 @@ export default class Homework1_Scene extends Scene {
 	 */
 	static checkAABBtoCircleCollision(aabb: AABB, circle: Circle): boolean {
 		// Your code goes here:
-		return false;
+
+		//dx = delta in x
+		let dx = circle.x - aabb.x;
+		//hw = half width or half x, r is half of diameter
+		let px = aabb.hw + circle.r - Math.abs(dx);
+
+		// shouldn't be <= because it counts touching as collide too
+		if(px < 0){
+			return false;
+		}
+
+		let dy = circle.y - aabb.y;
+		let py = aabb.hw + circle.r - Math.abs(dy);
+
+		// shouldn't be <= because it counts touching as collide too
+		if(py < 0){
+			return false;
+		}
+
+		// Detect corners
+
+		/*
+		 * Pythagorean Theorem
+		 * Find c of rectangle created by center of both shapes
+		 * Find c of AABB's corner split
+		 */
+		let distance = Math.sqrt((dx * dx) + (dy * dy));
+		if (distance > circle.r + Math.sqrt(Math.pow(aabb.hw, 2) + Math.pow(aabb.hh, 2)))
+		{
+			return false;
+		}
+
+		return true;
 	}
 
 }
