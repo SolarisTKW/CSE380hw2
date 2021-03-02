@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c9dcbcd-a9c6-4ccb-bf94-3575e017bcb3" name="Default Changelist" comment="updated gradient circle shader glsl and typescript such that the color is changeable">
+    <list default="true" id="4c9dcbcd-a9c6-4ccb-bf94-3575e017bcb3" name="Default Changelist" comment="Implemented collision detection between aabb and circles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/hw2_assets/spritesheets/matthew_ng_spaceship.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/hw2_assets/spritesheets/matthew_ng_spaceship.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw2/AI/SpaceshipPlayerController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/AI/SpaceshipPlayerController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hw2/Scenes/HW2_Scene.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw2/Scenes/HW2_Scene.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +68,7 @@
       <workItem from="1614382805462" duration="177000" />
       <workItem from="1614382990936" duration="8225000" />
       <workItem from="1614447352036" duration="3409000" />
+      <workItem from="1614701064221" duration="2205000" />
     </task>
     <task id="LOCAL-00001" summary="changed fleet ship sprite to original spaceship sprite">
       <created>1614382596086</created>
@@ -97,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614394270134</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented collision detection between aabb and circles">
+      <created>1614671774959</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614671774959</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +127,8 @@
     <MESSAGE value="changed fleet ship sprite to original spaceship sprite" />
     <MESSAGE value="untracked files preventing merge" />
     <MESSAGE value="updated gradient circle shader glsl and typescript such that the color is changeable" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated gradient circle shader glsl and typescript such that the color is changeable" />
+    <MESSAGE value="Implemented collision detection between aabb and circles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented collision detection between aabb and circles" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

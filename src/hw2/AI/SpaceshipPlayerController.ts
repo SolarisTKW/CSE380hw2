@@ -48,6 +48,7 @@ export default class SpaceshipPlayerController implements AI {
 		this.rotationSpeed = 2;
 
 		this.receiver = new Receiver();
+		this.receiver.subscribe(Homework2Event.PLAYER_DAMAGE);
 		this.emitter = new Emitter();
 	}
 

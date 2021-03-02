@@ -477,6 +477,24 @@ export default class Homework1_Scene extends Scene {
 				// If the asteroid is spawned in and it overlaps the player
 				if(asteroid.visible && Homework1_Scene.checkAABBtoCircleCollision(<AABB>this.player.collisionShape, <Circle>asteroid.collisionShape)){
 					// Put your code here:
+
+					// 1) Kill asteroid
+					asteroid.visible = false;
+					this.numAsteroids -= 1;
+
+					// 2i) Player shield should go down and Player goes invincible
+					this.playerShield -= 1;
+					this.playerinvincible = true;
+
+					// 2ii) Send out an event to destroy the ship
+					this.emitter.fireEvent(Homework2Event.PLAYER_DAMAGE, {"shield": this.playerShield});
+
+					// 3) The text of the GUI must be updated.
+					this.asteroidsLabel.text = `Asteroids: ${this.numAsteroids}`;
+					this.shieldsLabel.text = `Shield: ${this.playerShield}`;
+
+					// 4) We must increase the player's score, or numAsteroidsDestroyed
+					this.numAsteroidsDestroyed++;
 				}
 			}
 		}
